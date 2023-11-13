@@ -6,8 +6,7 @@ return {
             'nvim-tree/nvim-web-devicons',
         },
         config = function()
-            local nvim_tree = require('nvim-tree')
-            nvim_tree.setup {
+            require('nvim-tree').setup {
                 actions = {
                     -- Disable root dir change in explorer upon opening file in subdir
                     change_dir = {
