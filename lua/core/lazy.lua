@@ -18,10 +18,6 @@ if not lazy_ok then
     return
 end
 
-local keys = require("helpers.keys")
-keys.set_leader(",")
-keys.map("n", "<leader>L", lazy.show, "Show Lazy")
-
 -- Load plugins from specifications
 -- (The leader key must be set before this)
 lazy.setup("plugins")

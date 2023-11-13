@@ -3,6 +3,8 @@ vim.g.loaded_netrwPlugin = 1
 vim.opt.termguicolors = true
 vim.opt.number = true
 vim.opt.relativenumber = true
+vim.g.mapleader = ','
+vim.g.maplocalleader = ','
 
 -- Handle plugins with lazy.nvim
 require("core.lazy")
