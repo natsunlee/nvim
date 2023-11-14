@@ -5,6 +5,7 @@ vim.opt.number = true
 vim.opt.relativenumber = true
 vim.g.mapleader = ','
 vim.g.maplocalleader = ','
+vim.opt.clipboard = "unnamedplus"
 
 -- Handle plugins with lazy.nvim
 require("core.lazy")
