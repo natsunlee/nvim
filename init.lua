@@ -2,6 +2,10 @@ vim.g.loaded_netrw = 1
 vim.g.loaded_netrwPlugin = 1
 vim.opt.termguicolors = true
 
+-- Show whitespace
+vim.opt.list = true
+vim.opt.listchars:append({ space = '·' })
+
 -- Line numbers
 vim.opt.number = true
 vim.opt.relativenumber = true
@@ -19,6 +23,4 @@ require("core.lazy")
 
 -- Need to wait until plugins load for colors to be available
 vim.cmd.colorscheme('catppuccin-frappe')
--- Ensure file tree always opens on startup
--- Plugin currently disabled
--- vim.cmd('NvimTreeOpen')
+

@@ -7,7 +7,8 @@ return {
                     "python",
                     "lua",
                     "javascript",
-                    "typescript"
+                    "typescript",
+                    "yaml"
                 },
                 sync_install = false,
                 highlight = {

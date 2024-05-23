@@ -1,7 +1,7 @@
 return {
     {
         'nvim-tree/nvim-tree.lua',
-        cond = function() return false end,
+        --cond = function() return false end,
         --lazy = true,
         dependencies = {
             'nvim-tree/nvim-web-devicons',
@@ -57,6 +57,7 @@ return {
                         error = "",
                     },
                 },
+                view = { adaptive_size = true }
             }
         end
     }
