@@ -1,3 +1,4 @@
+-- Disable netrw to avoid issues/conflicts with nvim-tree
 vim.g.loaded_netrw = 1
 vim.g.loaded_netrwPlugin = 1
 vim.opt.termguicolors = true
@@ -21,3 +22,13 @@ vim.g.maplocalleader = ','
 -- cmd/ctrl+V
 vim.opt.clipboard = "unnamedplus"
 
+-- LSP diagnostic message configs. Most notably, the `update_in_insert` set to `true` allows for diagnostic messages
+-- to remain visible AND update in real-time while in insert mode.
+vim.diagnostic.config({
+    virtual_text = true,
+    signs = true,
+    update_in_insert = true,
+    underline = true,
+    severity_sort = false,
+    float = true,
+  })
