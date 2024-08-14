@@ -2,6 +2,7 @@ local utils = require("core.utils")
 
 return {
     "neovim/nvim-lspconfig",
+    cond = function() return false end,
     dependencies = {
       "williamboman/mason.nvim",
       "williamboman/mason-lspconfig.nvim"
